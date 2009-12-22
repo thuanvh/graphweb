@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="lib1">
+    <archive path="/home/thuan/sandbox/graphweb/out/artifacts/tesf_war_exploded/WEB-INF/lib/commons-io.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/out/artifacts/tesf_war_exploded/WEB-INF/lib/freemarker.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/out/artifacts/tesf_war_exploded/WEB-INF/lib/ognl.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/out/artifacts/tesf_war_exploded/WEB-INF/lib/commons-fileupload.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/out/artifacts/tesf_war_exploded/WEB-INF/lib/xwork-core.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/out/artifacts/tesf_war_exploded/WEB-INF/lib/commons-logging.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/out/artifacts/tesf_war_exploded/WEB-INF/lib/struts2-core.jar" />
+  </library>
+  <library name="lib">
+    <archive path="/home/thuan/sandbox/graphweb/lib/commons-io.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/lib/ognl.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/lib/freemarker.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/lib/commons-fileupload.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/lib/commons-logging.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/lib/xwork-core.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/lib/struts2-core.jar" />
+  </library>
+  <library name="struts2-2.1.8">
+    <archive path="/home/thuan/sandbox/graphweb/lib/struts2-core.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/lib/commons-fileupload.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/lib/commons-io.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/lib/commons-logging.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/lib/freemarker.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/lib/xwork-core.jar" />
+    <archive path="/home/thuan/sandbox/graphweb/lib/ognl.jar" />
+  </library>
+</eclipse-userlibraries>
+
