@@ -4,5 +4,6 @@
 	<exclude-output/>
 	<contentEntry url="file://$MODULE_DIR$">
 		<excludeFolder url="file://$MODULE_DIR$/out"/>
+		<excludeFolder url="file://$MODULE_DIR$/out"/>
 	</contentEntry>
 </component>
