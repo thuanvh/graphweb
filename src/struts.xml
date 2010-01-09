@@ -5,4 +5,9 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
+    <package name="default" extends="struts-default">
+        <action name="displaygraph" class="graphweb.GraphManager">
+             <result name="SUCCESS">/graphdisplay.jsp</result>   
+        </action>
+    </package>
 </struts>
