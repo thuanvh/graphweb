@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/struts2-2.1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/tomcat"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jeval"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jexl"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jep"/>
 	<classpathentry kind="output" path="out/production/graphweb"/>
 </classpath>

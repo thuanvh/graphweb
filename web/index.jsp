@@ -1,3 +1,4 @@
+<%@ page import="java.net.URLEncoder" %>
 <%--
   Created by IntelliJ IDEA.
   User: thuan
@@ -11,7 +12,7 @@
 
 <html>
 <head>
-
+<%--<meta http-equiv="refresh" content="0;url=populateMainForm.action">--%>
 </head>
 <body>
 
@@ -29,20 +30,26 @@
 
             <div style="width: 300px;border-style: solid">
                 <p>Person Data</p>
-                <s:form action="save" validate="true">
-                    <s:textfield id="id" name="person.id" cssStyle="display:none"/>
-                    <s:textfield id="firstName" label="First Name" name="person.firstName"/>
-                    <s:textfield id="lastName" label="Last Name" name="person.lastName"/>
+                <s:form action="loadgraph" >
+                    <%--<s:textfield id="id" name="person.id" cssStyle="display:none"/>--%>
+                    <s:textfield id="formuleExp" label="Expression" name="formuleExp"  />
+                    <s:textfield id="minX" label="MinX" name="minX" />
+                    <s:textfield id="maxX" label="MaxX" name="maxX"/>
+                    <s:textfield id="width" label="Width" name="width"/>
+                    <s:textfield id="height" label="Height" name="height"/>
                     <s:submit/>
                 </s:form>
             </div>
-            <div>
-
+            <div><p>Embeded Code</p>
+                
+                
+                 <input type="text" name="embededCode" value='<img src="<s:property value="graphParas" />" alt="graph"/>'  />
             </div>
         </td>
         <td>
             <%--Graph--%>
-            <img src="/displaygraph" alt="graph"/>
+
+            <img src="<s:property value="graphParas" />" alt="graph"/>
         </td>
     </tr>
 </table>

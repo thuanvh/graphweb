@@ -6,13 +6,16 @@ import java.awt.Toolkit;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
+import java.net.URLEncoder;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.sun.image.codec.jpeg.JPEGCodec;
 import com.sun.image.codec.jpeg.JPEGImageEncoder;
+import net.sourceforge.jeval.Evaluator;
 import org.apache.struts2.interceptor.ServletRequestAware;
 import org.apache.struts2.interceptor.ServletResponseAware;
+
 /**
  * Created by IntelliJ IDEA.
  * User: thuan
@@ -20,68 +23,94 @@ import org.apache.struts2.interceptor.ServletResponseAware;
  * Time: 20:19:48
  * To change this template use File | Settings | File Templates.
  */
-public class GraphManager implements
-        ServletRequestAware, ServletResponseAware {
+public class GraphManager extends ServletService
+{
+    public boolean verify(Graph graph){
+        return false;
+    }
+    public String generateGraph(Graph graph){
+return "";        
+    }
+    public int getYValue(int x){
+        return 0;
+    }
+    public String generateEmbedCode(Graph graph){
+         return "";
+    }
+    public String getSerialCode(Graph graph){
+        return "";
+    }
+    public GraphManager(){
+        init();
+    }
+    public String init(){
+        formuleExp="x^2";
+        width=200;
+        height=200;
+        minX=-1;
+        maxX=1;
 
-    private HttpServletRequest request;
-    private HttpServletResponse response;
-
+        return "init";
+    }
+    @Override
     public String execute() throws Exception {
-        getImage();
-        return "SUCCESS";
+        //getImage();
+        return "success";
+    }
+    String formuleExp;
+    int width;
+    int height;
+    int minX;
+    int maxX;
+
+    public String getFormuleExp() {
+        return formuleExp;
     }
 
-    public void setServletRequest(HttpServletRequest request) {
-        this.request = request;
+    public void setFormuleExp(String formuleExp) {
+        this.formuleExp = formuleExp;
     }
 
-    public HttpServletRequest getServletRequest() {
-        return request;
+    public int getHeight() {
+        return height;
     }
 
-    public void setServletResponse(HttpServletResponse response) {
-        this.response = response;
+    public void setHeight(int height) {
+        this.height = height;
     }
 
-    public HttpServletResponse getServletResponse() {
-        return response;
+    public int getMaxX() {
+        return maxX;
     }
 
-    public void getImage() {
+    public void setMaxX(int maxX) {
+        this.maxX = maxX;
+    }
+
+    public int getMinX() {
+        return minX;
+    }
+
+    public void setMinX(int minX) {
+        this.minX = minX;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+    private String graphParas;
+    public String getGraphParas(){
         try{
-        int w = 100;
-        int h = 100;
-        int pix[] = new int[w * h];
-        int index = 0;
-        BufferedImage bi=new BufferedImage(w,h,BufferedImage.TYPE_INT_RGB);
-        for (int y = 0; y < h; y++) {
-            int red = (y * 255) / (h - 1);
-            for (int x = 0; x < w; x++) {
-                int blue = (x * 255) / (w - 1);
-                pix[index] = (255 << 24) | (red << 16) | blue;
-                bi.setRGB(x,y,pix[index]);
-                index++;
-            }
-        }
-//        Image img = Toolkit.getDefaultToolkit().createImage(new MemoryImageSource(w, h, pix, 0, w));
-
-        /* Image src = getImage("doc:///demo/images/duke/T1.gif");
-                ImageFilter colorfilter = new RedBlueSwapFilter();
-                Image img = Toolkit.getDefaultToolkit().createImage(new FilteredImageSource(src.getSource(),
-                                        colorfilter));
-        */
-//        ImageProducer imageProducer = new MemoryImageSource(w, h, pix, 0, w);
-        // Send back image
-        ServletOutputStream sos = response.getOutputStream();
-
-        JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(sos);
-            response.setContentType("image/jpg");
-        encoder.encode(bi);
-//            BufferedImage bi=new BufferedImage()
-//        String type = imageProducer.createImage(response.getOutputStream());
-//        response.setContentType(type);
-        }catch(IOException e){
-            
+        String exp= URLEncoder.encode(formuleExp,"utf8");
+            graphParas="/displaygraph?e="+exp+"&xl="+minX+"&xu="+maxX+"&w="+width+"&h="+height;
+        return graphParas;
+        }catch(Exception e){
+            return "";
         }
     }
+    
 }

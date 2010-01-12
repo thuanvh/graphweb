@@ -8,4 +8,7 @@ package graphweb;
  * To change this template use File | Settings | File Templates.
  */
 public class UserAuthenticator {
+    public boolean authenticateUser(User user){
+         return true;
+    }
 }

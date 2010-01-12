@@ -6,8 +6,12 @@
 
 <struts>
     <package name="default" extends="struts-default">
-        <action name="displaygraph" class="graphweb.GraphManager">
-             <result name="SUCCESS">/graphdisplay.jsp</result>   
+        <action name="displaygraph" class="graphweb.GraphDisplay">
+             <result name="success">/graphdisplay.jsp</result>   
+        </action>
+
+        <action name="loadgraph" class="graphweb.GraphManager">
+            <result name="success">/index.jsp</result>
         </action>
     </package>
 </struts>

@@ -8,4 +8,12 @@ package graphweb;
  * To change this template use File | Settings | File Templates.
  */
 public class GraphSerialiser {
+    //GraphConfiguration graphConfiguration;
+    public String serialise(Graph graph){
+        return "";
+    }
+    public Graph serialise(String serial){
+        return new Graph();
+    }
+    
 }
