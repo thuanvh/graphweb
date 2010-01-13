@@ -10,7 +10,7 @@ import java.awt.*;
  * To change this template use File | Settings | File Templates.
  */
 public class Formula {
-   private String expression;
+    private String expression;
     private int minX;
     private int maxX;
 

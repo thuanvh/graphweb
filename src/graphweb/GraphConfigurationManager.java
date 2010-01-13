@@ -8,10 +8,11 @@ package graphweb;
  * To change this template use File | Settings | File Templates.
  */
 public class GraphConfigurationManager {
-    public void updateConfiguration(GraphConfiguration config){
+    public void updateConfiguration(GraphConfiguration config) {
 
     }
-    public GraphConfiguration getConfiguration(){
+
+    public GraphConfiguration getConfiguration() {
         return new GraphConfiguration();
     }
 }

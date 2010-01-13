@@ -9,7 +9,6 @@
         <action name="displaygraph" class="graphweb.GraphDisplay">
              <result name="success">/graphdisplay.jsp</result>   
         </action>
-
         <action name="loadgraph" class="graphweb.GraphManager">
             <result name="success">/index.jsp</result>
         </action>
