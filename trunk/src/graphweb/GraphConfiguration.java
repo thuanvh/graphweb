@@ -8,6 +8,8 @@ package graphweb;
  * To change this template use File | Settings | File Templates.
  */
 public class GraphConfiguration {
+    public static String EXPRESSION_SEPARATOR="_";
+    
     private Double rationOfCoordination;
     private Double stepX;
     private String colourOfGraph;

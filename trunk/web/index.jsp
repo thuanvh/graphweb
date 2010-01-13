@@ -12,38 +12,50 @@
 
 <html>
 <head>
-<%--<meta http-equiv="refresh" content="0;url=populateMainForm.action">--%>
+    <%--<meta http-equiv="refresh" content="0;url=populateMainForm.action">--%>
+    <link type="text/css" href="/css/style.css" rel="stylesheet"/>
 </head>
 <body>
-
-<table>
+<div class="header">
+    Web Graph
+    <%--<s:a theme="ajax" notifyTopics="/refresh">Refresh</s:a>--%>
+</div>
+<table class="maintable">
     <tr>
         <td>
-            <div style="width: 300px;border-style: solid">
-                <div style="text-align: right;">
-                    <%--<s:a theme="ajax" notifyTopics="/refresh">Refresh</s:a>--%>
-                </div>
+            <div>
+
                 <%--<s:div id="persons" theme="ajax" href="%{descrsUrl}" loadingText="Loading..." listenTopics="/refresh"/>--%>
             </div>
 
             <br/>
 
-            <div style="width: 300px;border-style: solid">
-                <p>Person Data</p>
-                <s:form action="loadgraph" >
+            <div class="formZone">
+                <div class="formTitle">Graph Data</div>
+                <div class="formbody">
+                <s:form action="loadgraph">
+                    <%--<input type="text" id="formuleExp0" value="x^2"/>--%>
+                    <%--<input type="text" id="formuleExp1" value="x^2+1"/>--%>
                     <%--<s:textfield id="id" name="person.id" cssStyle="display:none"/>--%>
-                    <s:textfield id="formuleExp" label="Expression" name="formuleExp"  />
-                    <s:textfield id="minX" label="MinX" name="minX" />
+                    <s:textfield id="formuleExp0" label="Expression 1" name="formuleExp0"/>
+                    <s:textfield id="formuleExp1" label="Expression 2" name="formuleExp1"/>
+                    <s:iterator value="formuleExps" status="fes">
+                        <input type="text" id="formuleExp<s:property value="#fes.index" />" value="x^2"/>
+                    </s:iterator>
+                    <s:textfield id="minX" label="MinX" name="minX"/>
                     <s:textfield id="maxX" label="MaxX" name="maxX"/>
                     <s:textfield id="width" label="Width" name="width"/>
                     <s:textfield id="height" label="Height" name="height"/>
                     <s:submit/>
                 </s:form>
+                    </div>
             </div>
-            <div><p>Embeded Code</p>
-                
-                
-                 <input type="text" name="embededCode" value='<img src="<s:property value="graphParas" />" alt="graph"/>'  />
+            <div class="formZone">
+                <div class="formTitle">Embeded Code</div>
+                <div class="formbody">
+                <input class="embededcode" type="text" name="embededCode"
+                       value='<img src="<s:property value="graphParas" />" alt="graph"/>'/>
+                    </div>
             </div>
         </td>
         <td>

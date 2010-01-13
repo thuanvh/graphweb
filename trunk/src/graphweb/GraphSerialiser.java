@@ -9,11 +9,13 @@ package graphweb;
  */
 public class GraphSerialiser {
     //GraphConfiguration graphConfiguration;
-    public String serialise(Graph graph){
+
+    public String serialise(Graph graph) {
         return "";
     }
-    public Graph serialise(String serial){
+
+    public Graph serialise(String serial) {
         return new Graph();
     }
-    
+
 }

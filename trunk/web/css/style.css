@@ -1,0 +1,26 @@
+.formZone{
+    width: 300px;
+    border: solid 1px green;
+    margin: 10px;
+}
+.formTitle{
+    color:white;
+    background-color:#3B5998;
+    font-size:15px;
+}
+.formbody{
+    padding:10px;
+}
+.embededcode{
+    width:100%;
+}
+.header{
+    font-size:30px;
+    font-color:White;
+    color:White;
+    text-align:center;
+    background-color:#3B5998;
+}
+.maintable,.maintable td{
+    vertical-align:top;
+}

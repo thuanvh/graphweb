@@ -20,7 +20,7 @@ public abstract class ServletService extends ActionSupport implements
     protected HttpServletRequest request;
     protected HttpServletResponse response;
 
-    public abstract String execute() throws Exception ;
+    public abstract String execute() throws Exception;
 
     public void setServletRequest(HttpServletRequest request) {
         this.request = request;

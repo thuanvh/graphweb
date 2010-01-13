@@ -8,7 +8,10 @@ import org.apache.commons.jexl.JexlHelper;
 import org.nfunk.jep.JEP;
 
 import java.awt.*;
+import java.awt.geom.Point2D;
 import java.net.URLEncoder;
+import java.util.Vector;
+import java.util.concurrent.atomic.AtomicReference;
 
 
 /**
@@ -19,7 +22,8 @@ import java.net.URLEncoder;
  * To change this template use File | Settings | File Templates.
  */
 public class Graph {
-    Point[] pointList;
+    Vector<Point.Double[]> pointList;
+
     String errorMessage;
     Formula[] formulaList;
     GraphConfiguration graphConfiguration;
@@ -39,14 +43,16 @@ public class Graph {
     public void setFormulaList(Formula[] formulaList) {
         this.formulaList = formulaList;
     }
-    public void setFormulaList(String expression[],int minX, int maxX){
-        for(int i=0; i<expression.length; i++){
-            Formula f=new Formula();
+
+    public void setFormulaList(String expression[], int minX, int maxX) {
+        for (int i = 0; i < expression.length; i++) {
+            Formula f = new Formula();
             f.setExpression(expression[i]);
             f.setMinX(minX);
             f.setMaxX(maxX);
         }
     }
+
     public GraphConfiguration getGraphConfiguration() {
         return graphConfiguration;
     }
@@ -55,19 +61,19 @@ public class Graph {
         this.graphConfiguration = graphConfiguration;
     }
 
-    public Point[] getPointList() {
+    public Vector<Point.Double[]> getPointList() {
         return pointList;
     }
 
-    public void setPointList(Point[] pointList) {
-        this.pointList = pointList;
+    public void setPointList(Vector<Point.Double[]> pointList) {
+        this.pointList=pointList;
     }
 
     public static void main(String args[]) {
-        try{
-        System.out.println(URLEncoder.encode("x+2"));
-        }catch(Exception e){
-            
+        try {
+            System.out.println(URLEncoder.encode("x+2"));
+        } catch (Exception e) {
+
         }
         /*try {
             JEP jep=new JEP();
