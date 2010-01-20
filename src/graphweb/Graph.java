@@ -23,7 +23,6 @@ import java.util.concurrent.atomic.AtomicReference;
  */
 public class Graph {
     Vector<Point.Double[]> pointList;
-
     String errorMessage;
     Formula[] formulaList;
     GraphConfiguration graphConfiguration;

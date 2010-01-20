@@ -16,26 +16,13 @@
   </component>
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="a8e8cd99-e3d0-4e6a-8749-f610508ad01e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphweb/FormulaCalculator.java" afterPath="$PROJECT_DIR$/src/graphweb/FormulaCalculator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphweb/ServletService.java" afterPath="$PROJECT_DIR$/src/graphweb/ServletService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphweb/GraphConfiguration.java" afterPath="$PROJECT_DIR$/src/graphweb/GraphConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphweb/Graph.java" afterPath="$PROJECT_DIR$/src/graphweb/Graph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphweb/Formula.java" afterPath="$PROJECT_DIR$/src/graphweb/Formula.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphweb/GraphConfigurationManager.java" afterPath="$PROJECT_DIR$/src/graphweb/GraphConfigurationManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphweb/GraphDisplay.java" afterPath="$PROJECT_DIR$/src/graphweb/GraphDisplay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphweb/GraphManager.java" afterPath="$PROJECT_DIR$/src/graphweb/GraphManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphweb/GraphSerialiser.java" afterPath="$PROJECT_DIR$/src/graphweb/GraphSerialiser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphweb.iml" afterPath="$PROJECT_DIR$/graphweb.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphweb/UserAuthenticator.java" afterPath="$PROJECT_DIR$/src/graphweb/UserAuthenticator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <ignored path=".idea/workspace.xml" />
     <ignored path="graphweb.iws" />
+    <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,69 +84,64 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GraphManager.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GraphManager.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/graphweb/GraphManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="29" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GraphConfiguration.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphweb/GraphConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="45" selection-start="235" selection-end="255" vertical-scroll-proportion="0.0">
+            <state line="173" column="95" selection-start="3678" selection-end="3678" vertical-scroll-proportion="0.33628318">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphDisplay.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphweb/GraphDisplay.java">
+      <file leaf-file-name="context.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="60" selection-start="3191" selection-end="3191" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Graph.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphweb/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="8" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="method#main#0;class#Graph#0" expanded="false" />
-                <element signature="method#main1#0;class#Graph#0" expanded="false" />
-              </folding>
-            </state>
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="struts.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="10" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
+            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.75">
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="44" selection-start="906" selection-end="906" vertical-scroll-proportion="-1.7727273">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="37.409092">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <file leaf-file-name="login.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="93" selection-start="221" selection-end="221" vertical-scroll-proportion="0.42775667">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updatesettings.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/updatesettings.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -186,11 +168,11 @@
         <option value="$PROJECT_DIR$/src/graphweb/FormulaCalculator.java" />
         <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/src/graphweb/GraphConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/graphweb/Graph.java" />
-        <option value="$PROJECT_DIR$/src/graphweb/GraphDisplay.java" />
-        <option value="$PROJECT_DIR$/src/graphweb/GraphManager.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/src/graphweb/GraphDisplay.java" />
+        <option value="$PROJECT_DIR$/src/graphweb/Graph.java" />
+        <option value="$PROJECT_DIR$/src/graphweb/GraphManager.java" />
       </list>
     </option>
   </component>
@@ -226,7 +208,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="Scope" currentSubView="All" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -238,10 +220,16 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
+      <pane id="ProjectPane">
         <subPane />
       </pane>
+      <pane id="Favorites">
+        <subPane subId="graphweb" />
+      </pane>
       <pane id="Scope">
+        <subPane />
+        <subPane subId="Problems" />
+        <subPane subId="Tests" />
         <subPane subId="Production">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -331,93 +319,135 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="graphweb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="graphweb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="css">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="graphweb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="graphweb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="WEB-INF">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="graphweb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="graphweb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="META-INF">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="graphweb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="graphweb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="graphweb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="graphweb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="server">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="graphweb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="graphweb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="server">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="conf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,6 +455,8 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="preferences.applicationServers" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -433,11 +465,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Tomcat Server.index.jsp">
-    <configuration default="false" name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 6">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
+    <configuration default="false" name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 61">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/loadgraph.action" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="graphweb:war exploded">
@@ -448,30 +483,10 @@
       </deployment>
       <server-settings>
         <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
-        <option name="BASE_DIRECTORY_NAME" value="index_jsp_graphweb9f42eab07" />
+        <option name="BASE_DIRECTORY_NAME" value="index_jsp_graphweb9f42eab08" />
       </server-settings>
       <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="37127" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -760,28 +775,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="25" width="1374" height="715" extended-state="6" />
+    <frame x="0" y="25" width="1366" height="712" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40140846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14535902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.642732" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16131498" sideWeight="0.67077464" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15061297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31690142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21048632" sideWeight="0.5766773" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29103345" sideWeight="0.33274958" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23394495" sideWeight="0.29225352" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969605" sideWeight="0.75399363" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29103345" sideWeight="0.65499127" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23394495" sideWeight="0.36619717" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.14886165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.27640846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14535902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16819572" sideWeight="0.806338" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -856,108 +871,254 @@
     <buildFile url="file://$PROJECT_DIR$/build.xml">
       <antCommandLine value="" />
       <runInBackground value="true" />
-      <targetFilters />
+      <targetFilters>
+        <filter targetName="-copy-manifest" isVisible="false" />
+        <filter targetName="-copy-persistence-xml" isVisible="false" />
+        <filter targetName="-copy-webdir" isVisible="false" />
+        <filter targetName="-debug-start-debuggee-main-test" isVisible="false" />
+        <filter targetName="-debug-start-debuggee-single" isVisible="false" />
+        <filter targetName="-debug-start-debuggee-test" isVisible="false" />
+        <filter targetName="-debug-start-debugger" isVisible="false" />
+        <filter targetName="-debug-start-debugger-main-test" isVisible="false" />
+        <filter targetName="-debug-start-debugger-test" isVisible="false" />
+        <filter targetName="-deploy-ant" isVisible="false" />
+        <filter targetName="-display-browser-cl" isVisible="false" />
+        <filter targetName="-display-browser-nb" isVisible="false" />
+        <filter targetName="-do-compile" isVisible="false" />
+        <filter targetName="-do-compile-single" isVisible="false" />
+        <filter targetName="-do-compile-single-jsp" isVisible="false" />
+        <filter targetName="-do-compile-test" isVisible="false" />
+        <filter targetName="-do-compile-test-single" isVisible="false" />
+        <filter targetName="-do-debug-fix" isVisible="false" />
+        <filter targetName="-do-debug-fix-test" isVisible="false" />
+        <filter targetName="-do-dist-with-manifest" isVisible="false" />
+        <filter targetName="-do-dist-without-manifest" isVisible="false" />
+        <filter targetName="-do-ear-init" isVisible="false" />
+        <filter targetName="-do-init" isVisible="false" />
+        <filter targetName="-do-test-run" isVisible="false" />
+        <filter targetName="-do-test-run-single" isVisible="false" />
+        <filter targetName="-do-tmp-dist-with-manifest" isVisible="false" />
+        <filter targetName="-do-tmp-dist-without-manifest" isVisible="false" />
+        <filter targetName="-get-browser" isVisible="false" />
+        <filter targetName="-init" isVisible="false" />
+        <filter targetName="-init-check" isVisible="false" />
+        <filter targetName="-init-cos" isVisible="false" />
+        <filter targetName="-init-debug-args" isVisible="false" />
+        <filter targetName="-init-deploy-ant" isVisible="false" />
+        <filter targetName="-init-display-browser" isVisible="false" />
+        <filter targetName="-init-macrodef-debug" isVisible="false" />
+        <filter targetName="-init-macrodef-java" isVisible="false" />
+        <filter targetName="-init-macrodef-javac" isVisible="false" />
+        <filter targetName="-init-macrodef-junit" isVisible="false" />
+        <filter targetName="-init-macrodef-nbjpda" isVisible="false" />
+        <filter targetName="-init-macrodef-nbjsdebug" isVisible="false" />
+        <filter targetName="-init-macrodef-property" isVisible="false" />
+        <filter targetName="-init-private" isVisible="false" />
+        <filter targetName="-init-project" isVisible="false" />
+        <filter targetName="-init-taskdefs" isVisible="false" />
+        <filter targetName="-init-user" isVisible="false" />
+        <filter targetName="-post-clean" isVisible="false" />
+        <filter targetName="-post-compile" isVisible="false" />
+        <filter targetName="-post-compile-single" isVisible="false" />
+        <filter targetName="-post-compile-test" isVisible="false" />
+        <filter targetName="-post-compile-test-single" isVisible="false" />
+        <filter targetName="-post-dist" isVisible="false" />
+        <filter targetName="-post-init" isVisible="false" />
+        <filter targetName="-post-nbmodule-run-deploy" isVisible="false" />
+        <filter targetName="-post-run-deploy" isVisible="false" />
+        <filter targetName="-post-test-run" isVisible="false" />
+        <filter targetName="-post-test-run-single" isVisible="false" />
+        <filter targetName="-pre-compile" isVisible="false" />
+        <filter targetName="-pre-compile-single" isVisible="false" />
+        <filter targetName="-pre-compile-test" isVisible="false" />
+        <filter targetName="-pre-compile-test-single" isVisible="false" />
+        <filter targetName="-pre-debug-fix" isVisible="false" />
+        <filter targetName="-pre-dist" isVisible="false" />
+        <filter targetName="-pre-init" isVisible="false" />
+        <filter targetName="-pre-nbmodule-run-deploy" isVisible="false" />
+        <filter targetName="-pre-pre-compile" isVisible="false" />
+        <filter targetName="-pre-pre-compile-test" isVisible="false" />
+        <filter targetName="-pre-run-deploy" isVisible="false" />
+        <filter targetName="-pre-test-run" isVisible="false" />
+        <filter targetName="-pre-test-run-single" isVisible="false" />
+        <filter targetName="-run-deploy-am" isVisible="false" />
+        <filter targetName="-run-deploy-nb" isVisible="false" />
+        <filter targetName="-run-undeploy-nb" isVisible="false" />
+        <filter targetName="-test-browse" isVisible="false" />
+        <filter targetName="-undeploy-ant" isVisible="false" />
+        <filter targetName="check-clean" isVisible="false" />
+        <filter targetName="clean" isVisible="true" />
+        <filter targetName="clean-ear" isVisible="true" />
+        <filter targetName="compile" isVisible="true" />
+        <filter targetName="compile-jsps" isVisible="true" />
+        <filter targetName="compile-single" isVisible="false" />
+        <filter targetName="compile-single-jsp" isVisible="false" />
+        <filter targetName="compile-test" isVisible="false" />
+        <filter targetName="compile-test-single" isVisible="false" />
+        <filter targetName="connect-client-debugger" isVisible="false" />
+        <filter targetName="connect-debugger" isVisible="false" />
+        <filter targetName="debug" isVisible="true" />
+        <filter targetName="debug-display-browser" isVisible="false" />
+        <filter targetName="debug-fix" isVisible="false" />
+        <filter targetName="debug-fix-test" isVisible="false" />
+        <filter targetName="debug-single" isVisible="false" />
+        <filter targetName="debug-single-main" isVisible="false" />
+        <filter targetName="debug-test" isVisible="false" />
+        <filter targetName="debug-test-with-main" isVisible="false" />
+        <filter targetName="default" isVisible="true" />
+        <filter targetName="deps-clean" isVisible="false" />
+        <filter targetName="deps-ear-jar" isVisible="false" />
+        <filter targetName="deps-jar" isVisible="false" />
+        <filter targetName="deps-module-jar" isVisible="false" />
+        <filter targetName="dist" isVisible="true" />
+        <filter targetName="dist-ear" isVisible="true" />
+        <filter targetName="do-clean" isVisible="false" />
+        <filter targetName="do-dist" isVisible="true" />
+        <filter targetName="do-ear-dist" isVisible="false" />
+        <filter targetName="init" isVisible="false" />
+        <filter targetName="javadoc" isVisible="true" />
+        <filter targetName="javadoc-browse" isVisible="false" />
+        <filter targetName="javadoc-build" isVisible="false" />
+        <filter targetName="library-inclusion-in-archive" isVisible="false" />
+        <filter targetName="library-inclusion-in-manifest" isVisible="false" />
+        <filter targetName="run" isVisible="true" />
+        <filter targetName="run-deploy" isVisible="false" />
+        <filter targetName="run-display-browser" isVisible="false" />
+        <filter targetName="run-main" isVisible="false" />
+        <filter targetName="run-test-with-main" isVisible="false" />
+        <filter targetName="run-undeploy" isVisible="false" />
+        <filter targetName="test" isVisible="true" />
+        <filter targetName="test-report" isVisible="false" />
+        <filter targetName="test-single" isVisible="true" />
+        <filter targetName="undeploy-clean" isVisible="false" />
+        <filter targetName="verify" isVisible="false" />
+      </targetFilters>
       <treeView value="true" />
       <verbose value="true" />
       <viewClosedWhenNoErrors value="false" />
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/graphdisplay.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphweb/ServletService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="59" selection-start="496" selection-end="496" vertical-scroll-proportion="0.31591448" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphweb/GraphConfigurationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="40" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk1.6.0_17/src.zip!/java/awt/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="421" selection-end="421" vertical-scroll-proportion="-4.6007395" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphweb/FormulaCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="4" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphweb/Formula.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="15" selection-start="430" selection-end="430" vertical-scroll-proportion="0.34338748" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphweb/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="272" selection-end="272" vertical-scroll-proportion="0.23433875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphweb/UserAuthenticator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="189" selection-end="189" vertical-scroll-proportion="0.31322506" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphweb/GraphSerialiser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="189" selection-end="189" vertical-scroll-proportion="0.31322506" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphweb/Graph.java">
+    <entry file="file://$PROJECT_DIR$/nbproject/genfiles.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="8" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#main#0;class#Graph#0" expanded="false" />
-            <element signature="method#main1#0;class#Graph#0" expanded="false" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphweb/GraphConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/nbproject/project.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="45" selection-start="235" selection-end="255" vertical-scroll-proportion="0.0">
+        <state line="1" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="-1.0079051">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbproject/project.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbproject/ant-deploy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="36" selection-start="1150" selection-end="1150" vertical-scroll-proportion="-12.954545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbproject/private/private.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.31914893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.75">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/updatesettings.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/conf/catalina.policy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/conf/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.17590822">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphweb/GraphDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="60" selection-start="3191" selection-end="3191" vertical-scroll-proportion="0.0">
+        <state line="21" column="81" selection-start="557" selection-end="557" vertical-scroll-proportion="-3.281496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphweb/FormulaCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.31931165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="37.409092">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphweb/GraphManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="29" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="44" selection-start="906" selection-end="906" vertical-scroll-proportion="-1.7727273">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="93" selection-start="221" selection-end="221" vertical-scroll-proportion="0.42775667">
+        <state line="173" column="95" selection-start="3678" selection-end="3678" vertical-scroll-proportion="0.33628318">
           <folding />
         </state>
       </provider>
