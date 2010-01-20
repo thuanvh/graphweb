@@ -59,7 +59,7 @@ public class GraphDisplay extends ServletService {
         }
     }
 
-    public void calculateEachFormula(int index) {
+    private void calculateEachFormula(int index) {
         FormulaCalculator calculator=this.calculator[index];
         double deltaX = (xUpper - xLower) / (double) width;
 //            int pix[] = new int[width * height];
@@ -89,7 +89,7 @@ public class GraphDisplay extends ServletService {
         graph.getPointList().insertElementAt(pointList,index);
 
     }
-    public void drawEachGraph(int index){
+    private void drawEachGraph(int index){
         //            System.out.print("\n======");
         //double deltaY=(maxY-minY)/(double)height;
         int yTransition = height;
@@ -98,8 +98,8 @@ public class GraphDisplay extends ServletService {
         int pixX,pixY;
         Point.Double[] pointList=graph.getPointList().get(index);
         for (pixX = 0; pixX < width; pixX++) {
-            pixY = (int) (height * (pointList[pixX].y - minY) / (maxY - minY));
-            pixY = yTransition - pixY;
+            pixY = (int)Math.round(yTransition - (height * (pointList[pixX].y - minY) / (maxY - minY)));
+            //pixY = yTransition - pixY;
 //                System.out.println(pixXBefore + "," + pixYBefore + "," + pixX + "," + pixY);
 
             //image.setRGB(pixX, pixY, Color.BLACK.getRGB());
@@ -110,7 +110,16 @@ public class GraphDisplay extends ServletService {
             pixYBefore = pixY;
         }
     }
-    public void getImage() {
+    private void drawLegend(){
+        // draw axe x
+        int pixY = (int)Math.round(height + (height * minY)  / (maxY - minY));
+        System.out.print(pixY+",");
+        graphics.drawLine(0,pixY,width,pixY);
+        // draw axe y
+        int pixX=(int)Math.round(width+(width*xLower)/(xUpper-xLower));
+        graphics.drawLine(pixX,0,pixX,height);
+    }
+    private void getImage() {
         try {
             // initialise image
             image = new BufferedImage(width + 2, height + 2, BufferedImage.TYPE_INT_RGB);
@@ -131,6 +140,7 @@ public class GraphDisplay extends ServletService {
                  drawEachGraph(i);
             }
 
+            drawLegend();
             // output image to the stream of response
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
             JPEGImageEncoder jpg = JPEGCodec.createJPEGEncoder(bos);

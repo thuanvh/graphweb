@@ -11,6 +11,7 @@ import java.util.Vector;
  * To change this template use File | Settings | File Templates.
  */
 public class GraphManager extends ServletService {
+
     public boolean verify(Graph graph) {
         return false;
     }
@@ -62,13 +63,14 @@ public class GraphManager extends ServletService {
         //getImage();
         return "success";
     }
+
     private String formuleExps[];
     private Vector<String> formuleExpList;
     private String formuleExp0;
     private String formuleExp1;
 
     public String getFormuleExp0() {
-        formuleExp0 =formuleExps[0];
+        formuleExp0 = formuleExps[0];
         return formuleExp0;
     }
 
@@ -77,7 +79,7 @@ public class GraphManager extends ServletService {
     }
 
     public String getFormuleExp1() {
-        formuleExp0 =formuleExps[1];
+        formuleExp0 = formuleExps[1];
         return formuleExp1;
     }
 
@@ -103,11 +105,11 @@ public class GraphManager extends ServletService {
      * load formule expression list
      */
     public void loadFormuleExp() {
-        formuleExps=new String[maxNumberOfExpression];
+        formuleExps = new String[maxNumberOfExpression];
         formuleExpList = new Vector();
         for (int i = 0; i < maxNumberOfExpression; i++) {
             String exp = request.getParameter("formuleExp" + i);
-            formuleExps[i]=exp;
+            formuleExps[i] = exp;
             System.out.println(exp);
             if (exp != null && exp.compareTo("") != 0) {
                 formuleExpList.add(exp);
@@ -167,10 +169,10 @@ public class GraphManager extends ServletService {
         try {
             String exp = "";
             for (int i = 0; i < formuleExpList.size(); i++) {
-                exp += URLEncoder.encode(formuleExpList.get(i)+ GraphConfiguration.EXPRESSION_SEPARATOR, "utf8") ;
+                exp += URLEncoder.encode(formuleExpList.get(i) + GraphConfiguration.EXPRESSION_SEPARATOR, "utf8");
             }
-
-            graphParas = "/displaygraph?e=" + exp + "&xl=" + minX + "&xu=" + maxX + "&w=" + width + "&h=" + height;
+            String port = request.getServerPort() == 80 ? "" : (":" + request.getServerPort());
+            graphParas = "http://" + request.getServerName() + port + "/displaygraph?e=" + exp + "&xl=" + minX + "&xu=" + maxX + "&w=" + width + "&h=" + height;
             return graphParas;
         } catch (Exception e) {
             return "";
