@@ -16,5 +16,9 @@
             <result name="success">/updatesettings.jsp</result>
             <result name="fail">/login.jsp</result>
         </action>
+        <action name="updateSettings" class="graphweb.UpdateSettingsForm">
+            <result name="success">/updatesettings.jsp</result>
+            <result name="fail">/updatesettings.jsp</result>
+        </action>
     </package>
 </struts>
