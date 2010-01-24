@@ -24,3 +24,8 @@
 .maintable,.maintable td{
     vertical-align:top;
 }
+.colorselect{
+    height:100px;
+    width:100px;
+    border: solid 1px gray;
+}

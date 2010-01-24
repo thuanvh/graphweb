@@ -10,7 +10,17 @@ package graphweb;
 public class User {
     String username;
     String password;
+    public User(){
 
+    }
+    public void copy(User user){
+        this.username=user.username;
+        this.password=user.password;
+    }
+    public User(String username,String password){
+        this.username=username;
+        this.password=password;
+    }
     public String getPassword() {
         return password;
     }
@@ -25,5 +35,10 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    @Override
+    public String toString() {
+        return username+","+password;
     }
 }
