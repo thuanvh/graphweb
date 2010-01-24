@@ -9,6 +9,9 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="struts2-2.1.8" />
+          <element id="library" level="project" name="jeval" />
+          <element id="library" level="project" name="jexl" />
+          <element id="library" level="project" name="jep" />
         </element>
       </element>
     </root>

@@ -12,5 +12,9 @@
         <action name="loadgraph" class="graphweb.GraphManager">
             <result name="success">/index.jsp</result>
         </action>
+        <action name="login" class="graphweb.LoginForm">
+            <result name="success">/updatesettings.jsp</result>
+            <result name="fail">/login.jsp</result>
+        </action>
     </package>
 </struts>

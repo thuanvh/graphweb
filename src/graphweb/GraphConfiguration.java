@@ -12,27 +12,27 @@ public class GraphConfiguration {
     
     private Double rationOfCoordination;
     private Double stepX;
-    private String colourOfGraph;
-    private String colourOfAxis;
+    private String colorOfGraph;
+    private String colorOfAxis;
     private int width;
     private int height;
-    private int regionX1;
-    private int regionX2;
+    private int minX;
+    private int maxX;
 
-    public String getColourOfAxis() {
-        return colourOfAxis;
+    public String getColorOfAxis() {
+        return colorOfAxis;
     }
 
-    public void setColourOfAxis(String colourOfAxis) {
-        this.colourOfAxis = colourOfAxis;
+    public void setColorOfAxis(String colorOfAxis) {
+        this.colorOfAxis = colorOfAxis;
     }
 
-    public String getColourOfGraph() {
-        return colourOfGraph;
+    public String getColorOfGraph() {
+        return colorOfGraph;
     }
 
-    public void setColourOfGraph(String colourOfGraph) {
-        this.colourOfGraph = colourOfGraph;
+    public void setColorOfGraph(String colorOfGraph) {
+        this.colorOfGraph = colorOfGraph;
     }
 
     public int getHeight() {
@@ -51,20 +51,20 @@ public class GraphConfiguration {
         this.rationOfCoordination = rationOfCoordination;
     }
 
-    public int getRegionX1() {
-        return regionX1;
+    public int getMinX() {
+        return minX;
     }
 
-    public void setRegionX1(int regionX1) {
-        this.regionX1 = regionX1;
+    public void setMinX(int minX) {
+        this.minX = minX;
     }
 
-    public int getRegionX2() {
-        return regionX2;
+    public int getMaxX() {
+        return maxX;
     }
 
-    public void setRegionX2(int regionX2) {
-        this.regionX2 = regionX2;
+    public void setMaxX(int maxX) {
+        this.maxX = maxX;
     }
 
     public Double getStepX() {
