@@ -25,12 +25,13 @@ public abstract class ServletService extends ActionSupport implements
     protected HttpServletResponse response;
     protected ServletContext context;
     protected Map<String, Object> session;
+
     public void setSession(Map<String, Object> stringObjectMap) {
-        session=stringObjectMap;
+        session = stringObjectMap;
         //To change body of implemented methods use File | Settings | File Templates.
     }
 
-    public ServletContext getServletContext(){
+    public ServletContext getServletContext() {
         return context;
     }
 

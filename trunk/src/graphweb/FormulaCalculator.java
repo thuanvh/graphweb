@@ -15,6 +15,38 @@ public class FormulaCalculator {
     private double initialValue = 0;
     private JEP jepEngine;
 
+    public Formula getFormula() {
+        return formula;
+    }
+
+    public void setFormula(Formula formula) {
+        this.formula = formula;
+    }
+
+    public double getInitialValue() {
+        return initialValue;
+    }
+
+    public void setInitialValue(double initialValue) {
+        this.initialValue = initialValue;
+    }
+
+    public JEP getJepEngine() {
+        return jepEngine;
+    }
+
+    public void setJepEngine(JEP jepEngine) {
+        this.jepEngine = jepEngine;
+    }
+
+    public String getVariableName() {
+        return variableName;
+    }
+
+    public void setVariableName(String variableName) {
+        this.variableName = variableName;
+    }
+
     public FormulaCalculator(Formula formula) {
         this.formula = formula;
         try {

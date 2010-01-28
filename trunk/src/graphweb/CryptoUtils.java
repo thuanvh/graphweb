@@ -26,7 +26,8 @@ import javax.crypto.spec.SecretKeySpec;
 public class CryptoUtils {
 
     public static final String AES = "AES";
-    public static final String KEY_FILE="/security/key";
+    public static final String KEY_FILE = "/security/key";
+
     /**
      * encrypt a value and generate a keyfile
      * if the keyfile is not found then a new one is created
@@ -120,7 +121,7 @@ public class CryptoUtils {
         p1.put("user", "Real");
         String encryptedPwd = CryptoUtils.encrypt(clearPwd, new File(KEY_FILE));
         System.out.println(encryptedPwd);
-        String pass=CryptoUtils.decrypt(encryptedPwd,new File(KEY_FILE));
+        String pass = CryptoUtils.decrypt(encryptedPwd, new File(KEY_FILE));
         System.out.println(pass);
         //p1.put("pwd", encryptedPwd);
         //p1.store(new FileWriter(PWD_FILE), "");
@@ -146,7 +147,7 @@ public class CryptoUtils {
     public static void main2(String[] args) {
         try {
             //generateKey("/home/thuan/sandbox/graphweb/web/security/key");
-            
+
 
         } catch (Exception e) {
             System.out.print(e);

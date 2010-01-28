@@ -118,7 +118,8 @@ public class UserUtils {
         }
         return null;
     }
-    public static User getUserByUserName(String username, String file){
+
+    public static User getUserByUserName(String username, String file) {
         UserUtils uu = new UserUtils(file);
         uu.parseXmlFile();
         uu.parseDocument();

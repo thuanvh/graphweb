@@ -8,8 +8,8 @@ package graphweb;
  * To change this template use File | Settings | File Templates.
  */
 public class GraphConfiguration {
-    public static String EXPRESSION_SEPARATOR="_";
-    
+    public static String EXPRESSION_SEPARATOR = "_";
+
     private Double rationOfCoordination;
     private Double stepX;
     private String colorOfGraph;
@@ -18,6 +18,33 @@ public class GraphConfiguration {
     private int height;
     private int minX;
     private int maxX;
+    private String expression1;
+    private String expression2;
+    private int gridSize;
+
+    public int getGridSize() {
+        return gridSize;
+    }
+
+    public void setGridSize(int gridSize) {
+        this.gridSize = gridSize;
+    }
+
+    public String getExpression1() {
+        return expression1;
+    }
+
+    public void setExpression1(String expression1) {
+        this.expression1 = expression1;
+    }
+
+    public String getExpression2() {
+        return expression2;
+    }
+
+    public void setExpression2(String expression2) {
+        this.expression2 = expression2;
+    }
 
     public String getColorOfAxis() {
         return colorOfAxis;

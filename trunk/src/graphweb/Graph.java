@@ -65,14 +65,15 @@ public class Graph {
     }
 
     public void setPointList(Vector<Point.Double[]> pointList) {
-        this.pointList=pointList;
+        this.pointList = pointList;
     }
 
     public static void main(String args[]) {
         try {
+            Color c = Color.decode("#570C57");
             System.out.println(URLEncoder.encode("x+2"));
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
         /*try {
             JEP jep=new JEP();

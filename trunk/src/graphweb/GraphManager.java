@@ -42,15 +42,25 @@ public class GraphManager extends ServletService {
      * @return
      */
     public String init() {
-        //formuleExpList = "x^2";
-        width = 200;
-        height = 200;
-        minX = -1;
-        maxX = 1;
+        
 
         return "init";
     }
+    private void loadConfiguration(){
+        //formuleExpList = "x^2";
+        GraphConfiguration graphConfiguration = GraphConfigurationManager.getGraphConfiguration(context.getRealPath(GraphConfigurationManager.DATA_FILE));
 
+        width = graphConfiguration.getWidth();
+        height = graphConfiguration.getHeight();
+        minX = graphConfiguration.getMinX();
+        maxX = graphConfiguration.getMaxX();
+        
+        formuleColor0=graphConfiguration.getColorOfGraph();
+        formuleColor1=graphConfiguration.getColorOfGraph();
+
+        formuleExp0=graphConfiguration.getExpression1();
+        formuleExp1=graphConfiguration.getExpression2();
+    }
     /**
      * execute function main of the index.jsp
      *
@@ -59,6 +69,9 @@ public class GraphManager extends ServletService {
      */
     @Override
     public String execute() throws Exception {
+        if(request.getMethod().compareTo("GET")==0){
+            loadConfiguration();
+        }
         loadFormuleExp();
         //getImage();
         return "success";
@@ -68,9 +81,27 @@ public class GraphManager extends ServletService {
     private Vector<String> formuleExpList;
     private String formuleExp0;
     private String formuleExp1;
+    private String formuleColor1;
+    private String formuleColor0;
+
+    public String getFormuleColor0() {
+        return formuleColor0;
+    }
+
+    public void setFormuleColor0(String formuleColor0) {
+        this.formuleColor0 = formuleColor0;
+    }
+
+    public String getFormuleColor1() {
+        return formuleColor1;
+    }
+
+    public void setFormuleColor1(String formuleColor1) {
+        this.formuleColor1 = formuleColor1;
+    }
 
     public String getFormuleExp0() {
-        formuleExp0 = formuleExps[0];
+        //formuleExp0 = formuleExps[0];
         return formuleExp0;
     }
 
@@ -79,7 +110,7 @@ public class GraphManager extends ServletService {
     }
 
     public String getFormuleExp1() {
-        formuleExp0 = formuleExps[1];
+        //formuleExp0 = formuleExps[1];
         return formuleExp1;
     }
 
@@ -167,12 +198,15 @@ public class GraphManager extends ServletService {
      */
     public String getGraphParas() {
         try {
-            String exp = "";
-            for (int i = 0; i < formuleExpList.size(); i++) {
+            String exp = URLEncoder.encode(formuleExp0 + GraphConfiguration.EXPRESSION_SEPARATOR + formuleExp1);
+            /*for (int i = 0; i < formuleExpList.size(); i++) {
                 exp += URLEncoder.encode(formuleExpList.get(i) + GraphConfiguration.EXPRESSION_SEPARATOR, "utf8");
-            }
+            }*/
+            String color = formuleColor0 + GraphConfiguration.EXPRESSION_SEPARATOR + formuleColor1;
             String port = request.getServerPort() == 80 ? "" : (":" + request.getServerPort());
-            graphParas = "http://" + request.getServerName() + port + "/displaygraph?e=" + exp + "&xl=" + minX + "&xu=" + maxX + "&w=" + width + "&h=" + height;
+            graphParas = "http://" + request.getServerName() + port + "/displaygraph?e="
+                    + exp + "&xl=" + minX + "&xu=" + maxX + "&w=" + width + "&h=" + height
+                    + "&c=" + color;
             return graphParas;
         } catch (Exception e) {
             return "";

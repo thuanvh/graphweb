@@ -7,5 +7,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jeval"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jexl"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jep"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jai"/>
 	<classpathentry kind="output" path="out/production/graphweb"/>
 </classpath>

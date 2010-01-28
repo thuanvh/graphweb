@@ -9,8 +9,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%--<%@ taglib uri="/tags/struts-html" prefix="html" %>--%>
-
-
 <html>
 <head>
     <%--<meta http-equiv="refresh" content="0;url=populateMainForm.action">--%>
@@ -18,54 +16,62 @@
     <link type="text/css" href="/js/colorpicker/css/colorpicker.css" rel="stylesheet"/>
     <script type="text/javascript" src="/js/jquery-1.4.min.js"></script>
     <script type="text/javascript" src="/js/colorpicker/js/colorpicker.js"></script>
-
 </head>
 <body>
 <div class="header">
     Web Graph
-    <%--<s:a theme="ajax" notifyTopics="/refresh">Refresh</s:a>--%>
 </div>
+<s:property value="message"/>
 <table class="maintable">
     <tr>
         <td>
-            <div>
-
-                <%--<s:div id="persons" theme="ajax" href="%{descrsUrl}" loadingText="Loading..." listenTopics="/refresh"/>--%>
-            </div>
-
-            <br/>
-
+            
             <div class="formZone">
                 <div class="formTitle">Graph Data</div>
                 <div class="formbody">
-                    <form action="loadgraph.action" method="post" >
-                    <%--<s:form action="loadgraph">--%>
-                        <%--<input type="text" id="formuleExp0" value="x^2"/>--%>
-                        <%--<input type="text" id="formuleExp1" value="x^2+1"/>--%>
-                        <%--<s:textfield id="id" name="person.id" cssStyle="display:none"/>--%>
-                        <div>
-                            <input>
-                            <s:div>
-                                <%--<s:text name="xinchao" id="abx" ></s:text>--%>
-                                <s:textfield id="formuleExp0" name="formuleExp0"/>
-                                <s:div id="formuleColor0" cssClass="colorselect"><s:hidden
-                                        id="formuleColorHid0"></s:hidden></s:div>
-                            </s:div>
-                            xin chao
-                        </div>
-                        <s:textfield id="formuleExp1" label="Expression 2" name="formuleExp1"/>
-                        <s:div id="formuleColor1" cssClass="colorselect"></s:div><s:hidden
-                            id="formuleColorHid1"></s:hidden>
-                        <s:iterator value="formuleExps" status="fes">
-                            <input type="text" id="formuleExp<s:property value="#fes.index" />" value="x^2"/>
-                        </s:iterator>
-                        <s:textfield id="minX" label="MinX" name="minX"/>
-                        <s:textfield id="maxX" label="MaxX" name="maxX"/>
-                        <s:textfield id="width" label="Width" name="width"/>
-                        <s:textfield id="height" label="Height" name="height"/>
+                    <s:form action="loadgraph" theme="simple">
+                        <table>
+                            <tr>
+                                <td>
+                                    <s:label id="lbl0" value="Expression 1"/>
+                                </td>
+                                <td>
+                                    <s:textfield id="formuleExp0" name="formuleExp0"/>
+
+                                </td>
+                                <td><s:div id="divformuleColor0" cssClass="colorselect" ></s:div>
+                                    <s:hidden id="formuleColor0" name="formuleColor0"></s:hidden></td>
+                            </tr>
+                            <tr>
+                                <td><s:label id="lbl1" value="Expression 2"/></td>
+                                <td>
+                                    <s:textfield id="formuleExp1" label="Expression 2" name="formuleExp1"/>
+
+                                </td>
+                                <td><s:div id="divformuleColor1" cssClass="colorselect" ></s:div>
+                                    <s:hidden id="formuleColor1" name="formuleColor1"></s:hidden></td>
+                            </tr>
+                            <tr>
+                                <td><s:label id="lbl2" value="Min X"/></td>
+                                <td><s:textfield id="minX" label="MinX" name="minX"/></td>
+                            </tr>
+                            <tr>
+                                <td><s:label id="lbl3" value="Max X"/></td>
+                                <td><s:textfield id="maxX" label="MaxX" name="maxX"/></td>
+                            </tr>
+                            <tr>
+                                <td><s:label id="lbl4" value="Width"/></td>
+                                <td><s:textfield id="width" label="Width" name="width"/></td>
+                            </tr>
+                            <tr>
+                                <td><s:label id="lbl5" value="Height"/>
+                                </td>
+                                <td><s:textfield id="height" label="Height" name="height"/>
+                                </td>
+                            </tr>
+                        </table>
                         <s:submit/>
-                    <%--</s:form>--%>
-                        </form>
+                    </s:form>
                 </div>
             </div>
             <div class="formZone">
@@ -78,14 +84,14 @@
         </td>
         <td>
             <%--Graph--%>
-
             <img src="<s:property value="graphParas" />" alt="graph"/>
         </td>
     </tr>
 </table>
 <script type="text/javascript">
-    $('#formuleColor0').ColorPicker({
-        color: '#0000ff',
+    $('#divformuleColor0').css('backgroundColor', '#<s:property value="formuleColor0"/>');
+    $('#divformuleColor0').ColorPicker({
+        color: '<s:property value="formuleColor0"/> ',
         onShow: function (colpkr) {
             $(colpkr).fadeIn(500);
             return false;
@@ -95,8 +101,25 @@
             return false;
         },
         onChange: function (hsb, hex, rgb) {
-            $('#formuleColor0').css('backgroundColor', '#' + hex);
-            $('#formuleColorHid0').value = hex;
+            $('#divformuleColor0').css('backgroundColor', '#' + hex);
+            $('#formuleColor0')[0].value = hex;
+            //            alert($('#formuleColorHid0')[0].value + ";" + hex);
+        }
+    });
+    $('#divformuleColor1').css('backgroundColor', '#<s:property value="formuleColor1"/>');
+    $('#divformuleColor1').ColorPicker({
+        color: '<s:property value="formuleColor1"/>',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#divformuleColor1').css('backgroundColor', '#' + hex);
+            $('#formuleColor1')[0].value = hex;
         }
     });
 
