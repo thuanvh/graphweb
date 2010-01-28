@@ -82,6 +82,10 @@ public class GraphConfigurationManager {
     public static final String Prop_RationOfCoordination = "RationOfCoordination";
     public static final String Prop_StepX = "StepX";
     public static final String Prop_Width = "Width";
+    public static final String Prop_Expression1 = "Expression1";
+    public static final String Prop_Expression2 = "Expression2";
+    public static final String Prop_GridSize="GridSize";
+
 //    public static final String ColorOfAxis="ColorOfAxis";
 
     private void createConfigurationChild(Document document, Element parent, GraphConfiguration gc) {
@@ -102,8 +106,12 @@ public class GraphConfigurationManager {
         parent.appendChild(ele7);
         Element ele8 = createElementConfig(document, Prop_Width, gc.getWidth() + "");
         parent.appendChild(ele8);
-
-
+        Element ele9 = createElementConfig(document, Prop_Expression1, gc.getExpression1() + "");
+        parent.appendChild(ele9);
+        Element ele10 = createElementConfig(document, Prop_Expression2, gc.getExpression2() + "");
+        parent.appendChild(ele10);
+        Element ele11 = createElementConfig(document, Prop_GridSize, gc.getGridSize() + "");
+        parent.appendChild(ele11);
     }
 
 
@@ -145,7 +153,7 @@ public class GraphConfigurationManager {
         GraphConfigurationManager gcm = new GraphConfigurationManager(file);
         /*gcm.parseXmlFile();
         gcm.parseDocument();*/
-        gcm.configuration=configuration;
+        gcm.configuration = configuration;
         Document doc = gcm.createUserDocument();
         gcm.printToFile(doc);
 
@@ -159,7 +167,7 @@ public class GraphConfigurationManager {
             gc.setHeight(400);
             gc.setWidth(400);
             System.out.println(gc);
-            GraphConfigurationManager.saveConfiguration(gc,file);
+            GraphConfigurationManager.saveConfiguration(gc, file);
             //UserUtils.saveUser(new User("admin", CryptoUtils.encrypt("password", new File(filekey))), file);
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -208,7 +216,9 @@ public class GraphConfigurationManager {
         configuration.setRationOfCoordination(getDoubleValue(configurationElement, Prop_RationOfCoordination));
         configuration.setStepX(getDoubleValue(configurationElement, Prop_StepX));
         configuration.setWidth(getIntValue(configurationElement, Prop_Width));
-
+        configuration.setExpression1(getTextValue(configurationElement, Prop_Expression1));
+        configuration.setExpression2(getTextValue(configurationElement, Prop_Expression2));
+        configuration.setGridSize(getIntValue(configurationElement, Prop_GridSize));
     }
 
     private String getAttTextValue(Element ele, String att) {
@@ -228,17 +238,17 @@ public class GraphConfigurationManager {
 
 
     private int getIntValue(Element ele, String tagName) {
-        String a=getTextValue(ele, tagName);
+        String a = getTextValue(ele, tagName);
         //in production application you would catch the exception
-        if(a!=null)
+        if (a != null)
             return Integer.parseInt(a);
         return -1;
     }
 
     private double getDoubleValue(Element ele, String tagName) {
-        String a=getTextValue(ele, tagName);
+        String a = getTextValue(ele, tagName);
         //in production application you would catch the exception
-        if(a!=null)
+        if (a != null)
             return Double.parseDouble(a);
         return -1;
     }

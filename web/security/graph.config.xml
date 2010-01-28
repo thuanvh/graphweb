@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <Expression1>x^2</Expression1>
+    <Expression2>x^3</Expression2>
+    <ColorOfAxis>FF00CC</ColorOfAxis>
+    <ColorOfGraph>4417d6</ColorOfGraph>
+    <Height>400</Height>
+    <MaxX>5</MaxX>
+    <MinX>-5</MinX>
+    <RationOfCoordination>10</RationOfCoordination>
+    <StepX>1</StepX>
+    <Width>400</Width>
+    <GridSize>5</GridSize>
+</configuration>

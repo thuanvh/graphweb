@@ -7,22 +7,21 @@ package graphweb;
  * Time: 14:35:39
  * To change this template use File | Settings | File Templates.
  */
-public class LoginForm  extends ServletService {
+public class LoginForm extends ServletService {
     private String userName;
     private String password;
 
     @Override
     public String execute() throws Exception {
-        User user=new User();
+        User user = new User();
         user.setPassword(password);
         user.setUsername(userName);
-        UserAuthenticator ua=new UserAuthenticator();
-        boolean result= ua.authenticateUser(user,context);
-        if(result){
-            session.put("User",user);
+        UserAuthenticator ua = new UserAuthenticator();
+        boolean result = ua.authenticateUser(user, context);
+        if (result) {
+            session.put("User", user);
             return "success";
-        }
-        else
+        } else
             return "fail";
     }
 
